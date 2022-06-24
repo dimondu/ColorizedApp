@@ -116,13 +116,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueColorLabel" destination="PVj-U6-dUd" id="Y2q-vb-0f3"/>
-                        <outlet property="blueColorSlider" destination="axp-vF-OOB" id="Ng7-3f-hWz"/>
+                        <outlet property="blueLabel" destination="PVj-U6-dUd" id="Y2q-vb-0f3"/>
+                        <outlet property="blueSlider" destination="axp-vF-OOB" id="Ng7-3f-hWz"/>
                         <outlet property="colorView" destination="h8q-5C-36V" id="vtf-Qt-O6C"/>
-                        <outlet property="greenColorLabel" destination="vwE-jT-2Ps" id="dsT-TB-lN8"/>
-                        <outlet property="greenColorSlider" destination="RtU-7g-6c0" id="gdO-9w-Mgb"/>
-                        <outlet property="redColorLabel" destination="gQD-CG-Df6" id="aPC-LI-1fD"/>
-                        <outlet property="redColorSlider" destination="rQo-qz-ktV" id="jqD-6n-01q"/>
+                        <outlet property="greenLabel" destination="vwE-jT-2Ps" id="dsT-TB-lN8"/>
+                        <outlet property="greenSlider" destination="RtU-7g-6c0" id="gdO-9w-Mgb"/>
+                        <outlet property="redLabel" destination="gQD-CG-Df6" id="aPC-LI-1fD"/>
+                        <outlet property="redSlider" destination="rQo-qz-ktV" id="jqD-6n-01q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
