@@ -83,20 +83,23 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rQo-qz-ktV">
                                                 <rect key="frame" x="-2" y="0.0" width="222" height="31"/>
+                                                <color key="minimumTrackTintColor" red="0.96882873773574829" green="0.33330312371253967" blue="0.050504527986049652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
-                                                    <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Ke3-hi-rOp"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ChQ-Ko-hg2"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RtU-7g-6c0">
                                                 <rect key="frame" x="-2" y="51" width="222" height="31"/>
+                                                <color key="minimumTrackTintColor" red="0.1542935463" green="0.76942896839999997" blue="0.54970761170000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="g8w-my-5k8"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="0l5-Up-hVT"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="axp-vF-OOB">
                                                 <rect key="frame" x="-2" y="102" width="222" height="31"/>
+                                                <color key="minimumTrackTintColor" red="0.0" green="0.108270766" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="OVM-WN-0TO"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="BmF-cS-pEN"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
