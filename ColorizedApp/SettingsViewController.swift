@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class SettingsViewController: UIViewController {
     
     // MARK: - IB Outlets
     @IBOutlet weak var colorView: UIView!
@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var blueLabel: UILabel!
     
     var uiColor: UIColor!
-    var delegate: MainViewControllerDelegate!
+    var delegate: SettingsViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +85,7 @@ class MainViewController: UIViewController {
     }
 }
 
+// MARK: UIColor
 extension UIColor {
     var coreImageColor: CIColor {
         return CIColor(color: self)

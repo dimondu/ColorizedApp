@@ -7,23 +7,23 @@
 
 import UIKit
 
-protocol  MainViewControllerDelegate{
+protocol  SettingsViewControllerDelegate{
     func setViewColor(red: CGFloat, green: CGFloat, blue: CGFloat)
 }
 
 class ColorViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let viewController = segue.destination as? MainViewController else { return }
+        guard let viewController = segue.destination as? SettingsViewController else { return }
         
         viewController.uiColor =  view.backgroundColor
         viewController.delegate = self
     }
 }
 
-// MARK: MainViewControllerDelegate
+// MARK: SettingsViewControllerDelegate
 
-extension ColorViewController: MainViewControllerDelegate {
+extension ColorViewController: SettingsViewControllerDelegate {
     func setViewColor(red: CGFloat, green: CGFloat, blue: CGFloat) {
         view.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
     }
