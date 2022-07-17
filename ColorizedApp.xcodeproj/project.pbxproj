@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4398841287DE403002FAE21 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4398840287DE403002FAE21 /* ColorViewController.swift */; };
+		F4398841287DE403002FAE21 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4398840287DE403002FAE21 /* MainViewController.swift */; };
 		F45CAE002865CBD10056A290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45CADFF2865CBD10056A290 /* AppDelegate.swift */; };
 		F45CAE022865CBD10056A290 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45CAE012865CBD10056A290 /* SceneDelegate.swift */; };
-		F45CAE042865CBD10056A290 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45CAE032865CBD10056A290 /* SettingsViewController.swift */; };
+		F45CAE042865CBD10056A290 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45CAE032865CBD10056A290 /* ColorViewController.swift */; };
 		F45CAE072865CBD10056A290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45CAE052865CBD10056A290 /* Main.storyboard */; };
 		F45CAE092865CBD30056A290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45CAE082865CBD30056A290 /* Assets.xcassets */; };
 		F45CAE0C2865CBD30056A290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45CAE0A2865CBD30056A290 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F4398840287DE403002FAE21 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		F4398840287DE403002FAE21 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F45CADFC2865CBD10056A290 /* ColorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45CADFF2865CBD10056A290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F45CAE012865CBD10056A290 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F45CAE032865CBD10056A290 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F45CAE032865CBD10056A290 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		F45CAE062865CBD10056A290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F45CAE082865CBD30056A290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45CAE0B2865CBD30056A290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 			children = (
 				F45CADFF2865CBD10056A290 /* AppDelegate.swift */,
 				F45CAE012865CBD10056A290 /* SceneDelegate.swift */,
-				F4398840287DE403002FAE21 /* ColorViewController.swift */,
-				F45CAE032865CBD10056A290 /* SettingsViewController.swift */,
+				F4398840287DE403002FAE21 /* MainViewController.swift */,
+				F45CAE032865CBD10056A290 /* ColorViewController.swift */,
 				F45CAE052865CBD10056A290 /* Main.storyboard */,
 				F45CAE082865CBD30056A290 /* Assets.xcassets */,
 				F45CAE0A2865CBD30056A290 /* LaunchScreen.storyboard */,
@@ -141,9 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F45CAE042865CBD10056A290 /* SettingsViewController.swift in Sources */,
+				F45CAE042865CBD10056A290 /* ColorViewController.swift in Sources */,
 				F45CAE002865CBD10056A290 /* AppDelegate.swift in Sources */,
-				F4398841287DE403002FAE21 /* ColorViewController.swift in Sources */,
+				F4398841287DE403002FAE21 /* MainViewController.swift in Sources */,
 				F45CAE022865CBD10056A290 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

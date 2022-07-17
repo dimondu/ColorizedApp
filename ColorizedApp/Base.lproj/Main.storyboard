@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Color View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="ozW-bS-mrJ">
             <objects>
-                <viewController id="Ngw-sv-Pu9" customClass="ColorViewController" customModule="ColorizedApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ngw-sv-Pu9" customClass="MainViewController" customModule="ColorizedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UUH-m4-JCJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,10 +30,28 @@
             </objects>
             <point key="canvasLocation" x="49.275362318840585" y="113.16964285714285"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="W2z-AP-ULZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9DJ-aF-pkw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RFd-3b-0X9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ngw-sv-Pu9" kind="relationship" relationship="rootViewController" id="pox-cn-qzF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfT-Q8-wDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-892" y="113.79310344827587"/>
+        </scene>
+        <!--Color View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="ColorizedApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ColorViewController" customModule="ColorizedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,21 +118,21 @@
                                                 <rect key="frame" x="-2" y="0.0" width="109" height="35"/>
                                                 <color key="minimumTrackTintColor" red="0.96882873773574829" green="0.33330312371253967" blue="0.050504527986049652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
-                                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mR0-YR-62c"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="xjy-54-9IH"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RtU-7g-6c0">
                                                 <rect key="frame" x="-2" y="54" width="109" height="35"/>
                                                 <color key="minimumTrackTintColor" red="0.1542935463" green="0.76942896839999997" blue="0.54970761170000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="NMc-OJ-HKM"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="fKI-8r-Eu4"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="axp-vF-OOB">
                                                 <rect key="frame" x="-2" y="108" width="109" height="35"/>
                                                 <color key="minimumTrackTintColor" red="0.0" green="0.108270766" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="clg-c1-SfX"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="MBe-8K-LcQ"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -125,17 +143,26 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vY0-Ga-PjE">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Okb-ql-3Mj"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pG-xK-vbY">
                                                 <rect key="frame" x="0.0" y="54" width="45" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="arL-Fv-CxP"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMi-Qh-BCg">
                                                 <rect key="frame" x="0.0" y="108" width="45" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9SV-pM-kVR"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -188,41 +215,11 @@
                         <outlet property="redLabel" destination="gQD-CG-Df6" id="aPC-LI-1fD"/>
                         <outlet property="redSlider" destination="rQo-qz-ktV" id="jqD-6n-01q"/>
                         <outlet property="redTextField" destination="vY0-Ga-PjE" id="gZ4-qb-XK6"/>
-                        <outlet property="toolbar" destination="LUe-pr-aUW" id="i00-rq-bG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" id="LUe-pr-aUW">
-                    <rect key="frame" x="0.0" y="0.0" width="329" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <items>
-                        <barButtonItem springLoaded="YES" style="done" systemItem="done" id="e0n-kf-8WN">
-                            <connections>
-                                <action selector="toolbarDoneButtonTapped:" destination="BYZ-38-t0r" id="K6p-wX-uFn"/>
-                            </connections>
-                        </barButtonItem>
-                    </items>
-                </toolbar>
             </objects>
             <point key="canvasLocation" x="969.56521739130437" y="113.83928571428571"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="W2z-AP-ULZ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9DJ-aF-pkw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RFd-3b-0X9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Ngw-sv-Pu9" kind="relationship" relationship="rootViewController" id="pox-cn-qzF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SfT-Q8-wDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-892" y="113.79310344827587"/>
         </scene>
     </scenes>
     <resources>
